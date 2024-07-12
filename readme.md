@@ -14,6 +14,6 @@ Fitur - Fitur :
     <h4>Data Pesanan Pengguna</h4>
     <img src="assets/screenshot/Screenshot 2024-07-12 174401.png">
     <br>
-    <h4></h4>
-    <img src="">
+    <h4>Keranjang Belanja</h4>
+    <img src="assets/screenshot/Screenshot 2024-07-12 174459.png">
 </div>
