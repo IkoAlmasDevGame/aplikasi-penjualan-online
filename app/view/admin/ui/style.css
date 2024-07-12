@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    font-size: normal;
+    font-family: 'Times New Roman';
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-header > .modal-title {
+    font-size: 18px;
+}

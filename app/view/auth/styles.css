@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: rgb(50, 56, 221);
+}
+
+.card {
+    width: 450px;
+}
+
+.card-body {
+    height: 680px;
+}
+
+.width-card {
+    width: 360px;
+}
+
+.height-card {
+    height: 320px;
+}
+
+@media screen {
+    .card {
+        max-width: 1024px;
+    }
+
+    .width-card {
+        max-width: 1024px;
+    }
+
+    .card-body {
+        max-height: 720px;
+    }
+
+    .height-card {
+        max-height: 500px;
+    }
+}
