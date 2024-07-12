@@ -30,28 +30,18 @@ CREATE TABLE IF NOT EXISTS `barang` (
   `id_satuan` int DEFAULT NULL,
   `gambar_produk` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_barang`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table aplikasi-sale.barang: ~4 rows (approximately)
-REPLACE INTO `barang` (`id_barang`, `nama_barang`, `id_kategori`, `harga_beli`, `harga_jual`, `jumlah`, `id_satuan`, `gambar_produk`) VALUES
-	(1, 'susu ultra milk cokelat 250ml', 1, 5000, 6000, 34, 1, 'susucoklat.jfif'),
-	(2, 'susu ultra milk vanilla 250ml', 1, 5000, 6000, 36, 1, 'susuvanilla.jfif'),
-	(3, 'tango varian rasa x jkt48', 2, 20000, 25000, 31, 4, 'tango_jkt48.jfif'),
-	(4, 'susu ultra milk strawberry 250ml', 1, 5000, 6000, 36, 1, 'susustrawberry.jfif');
 
 -- Dumping structure for table aplikasi-sale.kategori
 CREATE TABLE IF NOT EXISTS `kategori` (
   `id_kategori` int NOT NULL AUTO_INCREMENT,
   `nama_kategori` varchar(80) DEFAULT NULL,
   PRIMARY KEY (`id_kategori`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table aplikasi-sale.kategori: ~4 rows (approximately)
-REPLACE INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
-	(1, 'Minuman'),
-	(2, 'Makanan'),
-	(3, 'Alat Rumah Tangga'),
-	(4, 'Alat Perlengkapan Sekolah');
 
 -- Dumping structure for table aplikasi-sale.keranjang
 CREATE TABLE IF NOT EXISTS `keranjang` (
@@ -63,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `keranjang` (
   `date_in` date DEFAULT NULL,
   `total` float DEFAULT NULL,
   PRIMARY KEY (`id_keranjang`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table aplikasi-sale.keranjang: ~0 rows (approximately)
 
@@ -77,26 +67,18 @@ CREATE TABLE IF NOT EXISTS `pesanan` (
   `date_in` date DEFAULT NULL,
   `total` float DEFAULT NULL,
   PRIMARY KEY (`id_pesanan`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table aplikasi-sale.pesanan: ~0 rows (approximately)
-REPLACE INTO `pesanan` (`id_pesanan`, `id_barang`, `id_akun`, `qty`, `kurir`, `date_in`, `total`) VALUES
-	(1, 1, 2, 2, 'GOJEK', '2024-07-12', 12000),
-	(2, 3, 2, 5, 'GOJEK', '2024-07-12', 125000);
 
 -- Dumping structure for table aplikasi-sale.satuan
 CREATE TABLE IF NOT EXISTS `satuan` (
   `id_satuan` int NOT NULL AUTO_INCREMENT,
   `nama_satuan` varchar(80) DEFAULT NULL,
   PRIMARY KEY (`id_satuan`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table aplikasi-sale.satuan: ~4 rows (approximately)
-REPLACE INTO `satuan` (`id_satuan`, `nama_satuan`) VALUES
-	(1, 'Pcs'),
-	(2, 'Buah'),
-	(3, 'Batang'),
-	(4, 'Pack');
 
 -- Dumping structure for table aplikasi-sale.sistem
 CREATE TABLE IF NOT EXISTS `sistem` (
@@ -128,9 +110,6 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table aplikasi-sale.user: ~1 rows (approximately)
-REPLACE INTO `user` (`id_akun`, `username`, `email`, `password`, `repassword`, `alamat`, `no_telepon`, `nama_pengguna`, `role`) VALUES
-	(1, 'adminbaba', 'admin@tokobaba.com', '21232f297a57a5a743894a0e4a801fc3', '21232f297a57a5a743894a0e4a801fc3', NULL, NULL, 'admin baba', 'admin'),
-	(2, 'pengguna12', 'pengguna@website.com', '8b097b8a86f9d6a991357d40d3d58634', '8b097b8a86f9d6a991357d40d3d58634', 'Jl. Cilegon Raya No. 21', '0123456789', 'pengguna saja', 'pengguna');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
