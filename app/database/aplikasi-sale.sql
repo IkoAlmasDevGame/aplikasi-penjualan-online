@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `nama_pengguna` varchar(100) DEFAULT NULL,
   `role` enum('pengguna','admin') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id_akun`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table aplikasi-sale.user: ~1 rows (approximately)
 
