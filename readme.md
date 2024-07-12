@@ -8,9 +8,12 @@ Fitur - Fitur :
 5. Pengaturan Website
 
 <div>
-    <h4>Belajan Khusus Pengguna</h4>
+    <h4>Belaja Khusus Pengguna</h4>
     <img src="assets/screenshot/Screenshot 2024-07-12 174323.png">
     <br>
     <h4>Data Pesanan Pengguna</h4>
     <img src="assets/screenshot/Screenshot 2024-07-12 174401.png">
+    <br>
+    <h4></h4>
+    <img src="">
 </div>
